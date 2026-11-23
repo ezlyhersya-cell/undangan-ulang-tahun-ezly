@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Seventeen Invitation</title>
+
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <!-- Halaman Pembuka -->
+    <div class="container" id="cover">
+        <div class="invitation">
+
+            <div class="decoration">♡</div>
+
+            <p class="subtitle">UNDANGAN ULANG TAHUN</p>
+
+            <h1>Ulang Tahun Ke-17</h1>
+
+            <h2>Ezly</h2>
+            <img src="foto-ezly.jpeg" class="foto-cover" alt="Foto Ezly"
+
+            <p class="description">
+               Mari hadir dan rayakan hari spesialku
+               bersama penuh kebahagiaan!
+            </p>
+
+            <button onclick="openInvitation()">
+                Buka Undangan
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Halaman Isi Undangan -->
+    <div class="container" id="main-invitation" style="display: none;">
+        <div class="invitation">
+
+            <div class="decoration">♡</div>
+
+            <p class="subtitle">PERAYAAN ULANG TAHUN</p>
+
+            <h1>Ulang Tahun Ke-17</h1>
+
+            <h2>Ezly</h2>
+            <p class="nama-tamu-cover">
+                Kepada <span id="nama-tamu-cover">Tamu Undangan
+                </span>
+            </p>
+
+            <p class="description">
+                Tujuh belas tahun penuh cerita,
+                kebahagiaan, dan kenangan indah.
+
+                <br><br>
+
+                Aku ingin kamu menjadi bagian
+                dari hari spesialku!
+            </p>
+
+            <div class="event-details">
+
+                <p><strong>TANGGAL</strong></p>
+                <p>25 Februari 2027<p>
+
+                <br>
+
+                <p><strong>WAKTU</strong></p>
+                <p>19:00 - 21:00</p>
+                <div class="countdown">
+    <h3>Menuju Hari Spesialku</h3>
+
+    <div class="timer">
+        <div>
+            <span id="hari">0</span>
+            <p>Hari</p>
+        </div>
+
+        <div>
+            <span id="jam">0</span>
+            <p>Jam</p>
+        </div>
+
+        <div>
+            <span id="menit">0</span>
+            <p>Menit</p>
+        </div>
+
+        <div>
+            <span id="detik">0</span>
+            <p>Detik</p>
+        </div>
+    </div>
+</div>
+
+                <br>
+
+                <p><strong>LOKASI</strong></p>
+<p>McDonald's Graha Raya</p>
+
+<a href="https://share.google/dtz545KhPay9HnHJH"
+   target="_blank"
+   class="maps">
+   Lihat Lokasi di Google Maps
+</a>
+                
+    <p class="guest-greeting">Kepada Yth.
+</p>
+    <h2 id="nama-tamu-cover">Tamu Undangan</h2>
+
+    <!-- Buku Tamu -->
+<div class="guestbook">
+    <h3>Buku Tamu</h3>
+
+    <p class="guestbook-subtitle">
+        Berikan ucapan dan doa untuk hari spesialku!
+    </p>
+
+    <form id="guest-form">
+        <input
+            type="text"
+            id="guest-name"
+            placeholder="Nama kamu"
+            required
+        >
+
+        <select id="guest-status" required>
+            <option value="">Konfirmasi Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+
+        <textarea
+            id="guest-message"
+            placeholder="Tuliskan ucapan dan doa..."
+            required
+        ></textarea>
+
+        <button type="submit">Kirim Ucapan</button>
+    </form>
+
+    <div id="guest-list">
+        <h3>Ucapan dan Doa</h3>
+    </div>
+</div>
+</div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <audio id="musik" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<button id="tombol-musik" onclick="toggleMusik()">
+    Play Musik
+</button>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
